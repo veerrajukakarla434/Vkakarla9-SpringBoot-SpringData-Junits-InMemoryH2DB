@@ -66,6 +66,14 @@
 			<artifactId>powermock-api-easymock</artifactId>
 			<version>1.7.4</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/spring-mock-mvc -->
+		<dependency>
+		    <groupId>io.rest-assured</groupId>
+		    <artifactId>spring-mock-mvc</artifactId>
+		    <version>3.0.0</version>
+		    <scope>test</scope>
+		</dependency>
+		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

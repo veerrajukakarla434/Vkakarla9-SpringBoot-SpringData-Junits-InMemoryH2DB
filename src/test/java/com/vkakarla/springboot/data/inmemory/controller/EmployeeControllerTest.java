@@ -1,6 +1,7 @@
 package com.vkakarla.springboot.data.inmemory.controller;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Before;
@@ -61,8 +62,9 @@ public class EmployeeControllerTest {
 			assertEquals("Java", employeeDetails.getDepartment());
 			assertEquals("Veer@gmail.com", employeeDetails.getEmail());
 			assertEquals("Hyderabad-INDIA", employeeDetails.getAddress());
-
+          
 		} catch (Exception e) {
+			fail();
 			e.printStackTrace();
 		}
 
@@ -87,6 +89,7 @@ public class EmployeeControllerTest {
 			assertEquals("Delhi-INDIA", employeeDetails.getAddress());
 
 		} catch (Exception e) {
+			fail();
 			e.printStackTrace();
 		}
 
@@ -111,6 +114,7 @@ public class EmployeeControllerTest {
 			assertEquals("Bangalore-INDIA", employeeDetails.getAddress());
 
 		} catch (Exception e) {
+			fail();
 			e.printStackTrace();
 		}
 
